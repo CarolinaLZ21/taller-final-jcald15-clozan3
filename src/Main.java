@@ -22,6 +22,7 @@ public class Main {
                 System.out.printf(" ----------------------------------------- "+ "\n");
 
                 int x;
+                System.out.println("ingresa la opcion que deseas: ");
                 Scanner sc = new Scanner(System.in);
                 x = sc.nextInt();
 
@@ -58,5 +59,9 @@ public class Main {
                         case 0:
                                 System.out.printf(" -     6. Condicinal Switch" + "              - "+ "\n");
 
+                        default:
+                                System.out.println("No existe el capitulo");
+
+        }
         }
 }
