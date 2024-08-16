@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
         public static void main(String[] args) {
 
@@ -19,6 +21,42 @@ public class Main {
                 System.out.printf("       0. Salir                          - "+ "\n");
                 System.out.printf(" ----------------------------------------- "+ "\n");
 
+                int x;
+                Scanner sc = new Scanner(System.in);
+                x = sc.nextInt();
+
+                switch (x) {
+                        case 1:
+                                System.out.printf(" -     1. Datos Primitivos               - "+ "\n");
+                                break;
+                        case 2:
+                                System.out.printf(" -     2. String                         - "+ "\n");
+                                break;
+                        case 3:
+                                System.out.printf(" -     3. Constantes                     - "+ "\n");
+                                break;
+                        case 4:
+                                System.out.printf(" -     4. Tipo de Operadores             - "+ "\n");
+                                break;
+                        case 5:
+                                System.out.printf(" -     5. Condicional IF, ELSE, IF ELSE  - "+ "\n");
+                                break;
+                        case 6:
+                                System.out.printf(" -     6. Condicinal Switch              - "+ "\n");
+                                break;
+                        case 7:
+                                System.out.printf(" -     5. Condicional IF, ELSE, IF ELSE  - "+ "\n");
+                                break;
+                        case 8:
+                                System.out.printf(" -     6. Condicinal Switch" + "              - "+ "\n");
+                        case 9:
+                                System.out.printf(" -     6. Condicinal Switch              - "+ "\n");
+                                break;
+                        case 10:
+                                System.out.printf(" -     5. Condicional IF, ELSE, IF ELSE  - "+ "\n");
+                                break;
+                        case 0:
+                                System.out.printf(" -     6. Condicinal Switch" + "              - "+ "\n");
 
         }
 }
