@@ -188,36 +188,84 @@ public class Main {
 
                                 switch (z) {
                                         case 1:
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     Aritmeticos                      - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     1. Explicacion de Suma            - "+ "\n");
-                                                System.out.printf(" -     2. Explicacion de Resta           - "+ "\n");
-                                                System.out.printf(" -     3. Explicacion de Multiplicacion  - "+ "\n");
-                                                System.out.printf(" -     4. Explicacion de Division        - "+ "\n");
-                                                System.out.printf(" -     5. Explicacion de Modulo          - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" -                                     Aritmeticos                                                          - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" - +	En la suma, los valores de dos operandos se suman. Ejemplo: x + y = z                                  - "+ "\n");
+                                                System.out.printf(" - -	En la resta, el valor del segundo operando se resta del valor del primer operando. Ejemplo: x - y = z  - "+ "\n");
+                                                System.out.printf(" - *	En la multiplicación, se multiplican dos operandos. Ejemplo: x * y = z                                 - "+ "\n");
+                                                System.out.printf(" - /	En la división, el primer operando se divide por el valor del segundo operando. Ejemplo: x / y = z     - "+ "\n");
+                                                System.out.printf(" - % El operando mod calcula el valor restante de una división. Ejemplo: 2 mod 2 = 1                        - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------ "+ "\n");
                                                 break;
+
                                         case 2:
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     Relacionales                     - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     1. Explicacion de Menor           - "+ "\n");
-                                                System.out.printf(" -     2. Explicacion de Mayor           - "+ "\n");
-                                                System.out.printf(" -     3. Explicacion de Menor Igual     - "+ "\n");
-                                                System.out.printf(" -     4. Explicacion de Mayor Igual     - "+ "\n");
-                                                System.out.printf(" -     5. Explicacion de Igual           - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" -                                     Relacionales                                                               - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" - <   El operador Menor, compara si un valor es menor que el otro Ejemplo: comparacion = 3 < 5                   - "+ "\n");
+                                                System.out.printf(" - >	  El operador Mayor, compara si un valor es mayor que otro Ejemplo: comparacion = 10 > 7                     - "+ "\n");
+                                                System.out.printf(" - <=  El operador Menor o igual, compara si un valor es menor o igual que el otro Ejemplo: comparacion = 7 <= 7  - "+ "\n");
+                                                System.out.printf(" - >=  El operador Mayor o igual, compara si un valor es mayor o igual que el otro Ejemplo: comparacion = 7 >= 2  - "+ "\n");
+                                                System.out.printf(" - =   El operando Igual, compara si un valor es igual que el otro Ejemplo: comparacion = 9 = 9                   - "+ "\n");
+                                                System.out.printf(" - !=  El operando diferente, compara si un valor es diferente de otro Ejemplo: comparacion = 9 != 7              - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
                                                 break;
                                         case 3:
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     Logicos                          - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     1. Explicacion de And             - "+ "\n");
-                                                System.out.printf(" -     2. Explicacion de Or              - "+ "\n");
-                                                System.out.printf(" -     3. Explicacion de Not             - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" -                                     Logicos                                                                    - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" - Los operadores lógicos son herramientas poderosas para combinar o invertir condiciones lógicas en un programa. - "+ "\n");
+                                                System.out.printf(" -                                                                                                                - "+ "\n");
+                                                System.out.printf(" - Los operadores lógicos más comunes son && (AND lógico), || (OR lógico) y ! (NOT lógico).                       - "+ "\n");
+                                                System.out.printf(" -                                                                                                                - "+ "\n");
+                                                System.out.printf(" - El operador && devuelve true si ambas condiciones son verdaderas, || devuelve true si al menos una condición   - "+ "\n");
+                                                System.out.printf(" - es verdadera, y ! invierte el valor de una condición, es decir, cambia true a false y viceversa.               - "+ "\n");
+                                                System.out.printf(" -                                                                                                                - "+ "\n");
+                                                System.out.printf(" - Estos operadores son esenciales para construir expresiones condicionales complejas y tomar decisiones          - "+ "\n");
+                                                System.out.printf(" - basadas en múltiples condiciones lógicas. Se utilizan en conjunto con operadores de comparación para crear     - "+ "\n");
+                                                System.out.printf(" - lógica condicional robusta en programas.                                                                       - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
+                                                System.out.printf(" -                                     TABLAS DE VERDAD                                                           - "+ "\n");
+                                                System.out.printf(" -                                 &&(AND)    ||(OR)               !(NOT)                                         - "+ "\n");
+                                                System.out.printf(" -                      | V | V |   | V |     | V |               | V | F |                                       - "+ "\n");
+                                                System.out.printf(" -                      | V | F |   | F |     | V |               | F | V |                                       - "+ "\n");
+                                                System.out.printf(" -                      | F | V |   | F |     | V |                                                               - "+ "\n");
+                                                System.out.printf(" -                      | F | F |   | F |     | V |                                                               - "+ "\n");
+                                                System.out.printf(" ------------------------------------------------------------------------------------------------------------------ "+ "\n");
                                                 break;
+
+                                        case 4:
+                                                System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" -                                     Asignacion                                                                           - "+ "\n");
+                                                System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" - Los operadores de asignación asignan valores a las variables:                                                             - "+ "\n");
+                                                System.out.printf(" -                                                                                                                          - "+ "\n");
+                                                System.out.printf(" - =  Asigna el valor de la expresión a la variable. Ejemplo: asigna valor 5 a la variable X = 5                            - "+ "\n");
+                                                System.out.printf(" - += Suma el valor de la expresión al valor de la variable y reasigna el resultado a la variable. Ejemplo: X += 5          - "+ "\n");
+                                                System.out.printf(" - -= Resta el valor de la expresión del valor de la variable y reasigna el resultado a la variable. Ejemplo: X -= 3        - "+ "\n");
+                                                System.out.printf(" - := Concatena el valor de la variable y el valor de la expresión y reasigna el resultado a la variable. Ejemplo: X := Y   - "+ "\n");
+                                                System.out.printf(" -                                                                                                                          - "+ "\n");
+                                                System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                break;
+
+                                        case 5:
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Incremento y Decremento                                                                                               - "+ "\n");
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" - Los operadores de incremento (++) y decremento (—) son útiles para modificar el valor de una variable en una unidad.      - "+ "\n");
+                                                System.out.printf(" -                                                                                                                           - "+ "\n");
+                                                System.out.printf(" - El operador de incremento aumenta el valor de la variable en 1, mientras que el operador de decremento lo disminuye en 1. - "+ "\n");
+                                                System.out.printf(" -                                                                                                                           - "+ "\n");
+                                                System.out.printf(" - Estos operadores son especialmente útiles en bucles y otras situaciones en las que se necesita actualizar una variable    - "+ "\n");
+                                                System.out.printf(" - de forma repetida. También se pueden utilizar en combinación con operadores de asignación para realizar incrementos       - "+ "\n");
+                                                System.out.printf(" - o decrementos personalizados, como x += 2; que incrementa x en 2 unidades.                                                - "+ "\n");
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                break;
+                                        default:
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     OPCION NO VALIDA                  - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
                                 }
                                 break;
                         case 5:
@@ -229,7 +277,49 @@ public class Main {
                                 System.out.printf(" -     3. Explicacion de ELSE            - "+ "\n");
                                 System.out.printf(" -     4. Programa IF, ELSE, IF ELSE     - "+ "\n");
                                 System.out.printf(" ----------------------------------------- "+ "\n");
+
+                        int a;
+                        System.out.println("ingresa la opcion que deseas: ");
+                        Scanner ie = new Scanner(System.in);
+                        a = ie.nextInt();
+
+                                switch (a) {
+                                        case 1:
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Explicacion de IF                - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     1. Explicacion de IF              - "+ "\n");
+                                                System.out.printf(" -     2. Programa IF                    - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                break;
+                                        case 2:
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Explicacion de ELSE IF           - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     1. Explicacion de ELSE IF         - "+ "\n");
+                                                System.out.printf(" -     2. Programa ELSE IF               - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                break;
+                                        case 3:
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Explicacion de ELSE              - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     1. Explicacion de ELSE            - "+ "\n");
+                                                System.out.printf(" -     2. Programa ELSE                  - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                break;
+                                                case 4:
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Programa de IF, ELSE, IF ELSE - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" -     1. Explicacion de IF, ELSE, IF ELSE - "+ "\n");
+                                                System.out.printf(" -     2. Programa IF, ELSE, IF ELSE     - "+ "\n");
+                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                break;
+                                }
+
                                 break;
+
                         case 6:
                                 System.out.printf(" ----------------------------------------- "+ "\n");
                                 System.out.printf(" -     SWITCH                            - "+ "\n");
