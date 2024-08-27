@@ -5,8 +5,8 @@ public class Main {
 
                 System.out.printf(" ----------------------------------------- " + "\n");
                 System.out.printf(" -     MENU CAPITULO DE PROGRAMACIÓN     - "+ "\n");
-                System.out.printf(" -       JORGE CALDERON                  - "+ "\n");
-                System.out.printf(" -       CAROLINA LOZANO                 - "+ "\n");
+                System.out.printf(" -         JORGE CALDERON                - "+ "\n");
+                System.out.printf(" -         CAROLINA LOZANO              - "+ "\n");
                 System.out.printf(" ----------------------------------------- "+ "\n");
                 System.out.printf(" -     1. Datos Primitivos               - "+ "\n");
                 System.out.printf(" -     2. String                         - "+ "\n");
@@ -366,6 +366,8 @@ public class Main {
                                 System.out.printf(" -     Nos vemos lk                      - "+ "\n");
                                 break;
                         default:
+                                System.out.println("No existe el capitulo, verificar el menu de arriba");
+                                System.out.println("No existe el capitulo, verificar el menu de arriba");
                                 System.out.println("No existe el capitulo, verificar el menu de arriba");
                 }
         }
