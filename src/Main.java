@@ -367,6 +367,8 @@ public class Main {
                                 break;
                         default:
                                 System.out.println("No existe el capitulo, verificar el menu de arriba");
+                                System.out.println("No existe el capitulo, verificar el menu de abajo");
+                                System.out.println("No existe el capitulo, verificar el menu de abajo");
                 }
         }
 }
