@@ -195,7 +195,7 @@ public class Main {
                                                 System.out.printf(" - -	En la resta, el valor del segundo operando se resta del valor del primer operando. Ejemplo: x - y = z  - "+ "\n");
                                                 System.out.printf(" - *	En la multiplicación, se multiplican dos operandos. Ejemplo: x * y = z                                 - "+ "\n");
                                                 System.out.printf(" - /	En la división, el primer operando se divide por el valor del segundo operando. Ejemplo: x / y = z     - "+ "\n");
-                                                System.out.printf(" - % El operando mod calcula el valor restante de una división. Ejemplo: 2 mod 2 = 1                        - "+ "\n");
+                                                System.out.printf(" - mod El operando mod calcula el valor restante de una división. Ejemplo: 2 mod 2 = 1                        - "+ "\n");
                                                 System.out.printf(" ------------------------------------------------------------------------------------------------------------ "+ "\n");
                                                 break;
 
@@ -285,12 +285,13 @@ public class Main {
 
                                 switch (a) {
                                         case 1:
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     Explicacion de IF                - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
-                                                System.out.printf(" -     1. Explicacion de IF              - "+ "\n");
-                                                System.out.printf(" -     2. Programa IF                    - "+ "\n");
-                                                System.out.printf(" ----------------------------------------- "+ "\n");
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" -     Explicacion de IF                                                                                                     - "+ "\n");
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
+                                                System.out.printf(" - Permite que un programa decida si ejecuta una sentencia o un bloque de sentencias, en caso de que la condición sea        - "+ "\n");
+                                                System.out.printf(" - verdadera, o bien si salta su ejecución, en caso de que la condición sea falsa                                            - "+ "\n");
+                                                System.out.printf(" -                                                                                                                           - "+ "\n");
+                                                System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- "+ "\n");
                                                 break;
                                         case 2:
                                                 System.out.printf(" ----------------------------------------- "+ "\n");
