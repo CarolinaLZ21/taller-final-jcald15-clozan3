@@ -348,8 +348,10 @@ public class Main {
                         break;
                     case 2:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Programa Switch                                                                                                 -" + "\n");
-                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" -     Programa Switch                                                                                                       -" + "\n");
+                        System.out.printf(" -     Determina la calificación de acuerdo al numero ingresado                                                              -" + "\n");
+                        System.out.printf(" -     Si es 1 o 2 Su calificación es:F,Si es 3 o 4 Su calificación es:D,Si es 5 o 6 Su calificación es: C                   -" + "\n");
+                        System.out.printf(" -     Si es 7 o 8 Su calificación es: B, Si es 9 o 10 Su calificación es: A                                                 -" + "\n");
 
                         Scanner calificacion = new Scanner(System.in);
                         System.out.println("Ingrese calificación");
@@ -412,6 +414,7 @@ public class Main {
                     case 2:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
                         System.out.printf(" -     Programa Ternaria                                                                                                 -" + "\n");
+                        System.out.printf(" -     Determina si un numero es par o impar                                                                                                 -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
 
                         Scanner numero = new Scanner(System.in);
@@ -437,6 +440,34 @@ public class Main {
                 System.out.printf(" -     2. Programa DO WHILE - Adivina    - " + "\n");
                 System.out.printf(" -     el numero                         - " + "\n");
                 System.out.printf(" ----------------------------------------- " + "\n");
+
+                Scanner dw = new Scanner(System.in);
+                System.out.println("ingresa la opcion que deseas");
+                int d = dw.nextInt();
+                switch (d) {
+                    case 1:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Explicacion de DO WHILE                                                                                               -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" - La instrucción do-while permite repetir una instrucción                                                                    -" + "\n");
+                        System.out.printf(" - o una instrucción compuesta hasta que una expresión especificada sea false                                                 -" + "\n");
+                        System.out.printf(" -                                                                                                                           -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+                    case 2:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Programa DO WHILE                                                                                                     -" + "\n");
+                        System.out.printf(" -     Adivina el numero                                                                                                     -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+
+                    default:
+                        System.out.printf(" ----------------------------------------- " + "\n");
+                        System.out.printf(" -     OPCION NO VALIDA                  - " + "\n");
+                        System.out.printf(" ----------------------------------------- " + "\n");
+
+                }
+                break;
             case 9:
                 System.out.printf(" ----------------------------------------- " + "\n");
                 System.out.printf(" -     WHILE                             - " + "\n");
@@ -444,6 +475,32 @@ public class Main {
                 System.out.printf(" -     1. Explicacion de WHILE           - " + "\n");
                 System.out.printf(" -     2. Programa WHILE                 - " + "\n");
                 System.out.printf(" ----------------------------------------- " + "\n");
+
+                Scanner wh = new Scanner(System.in);
+                System.out.println("ingresa la opcion que deseas");
+                int w = wh.nextInt();
+                switch (w) {
+                    case 1:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Explicacion de  WHILE                                                                                               -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" -                                                                  -" + "\n");
+                        System.out.printf(" -                                                 -" + "\n");
+                        System.out.printf(" -                                                                                                                           -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+                    case 2:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Programa  WHILE                                                                                                     -" + "\n");
+                        System.out.printf(" -                                                                                                          -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+
+                    default:
+                        System.out.printf(" ----------------------------------------- " + "\n");
+                        System.out.printf(" -     OPCION NO VALIDA                  - " + "\n");
+                        System.out.printf(" ----------------------------------------- " + "\n");
+                }
                 break;
             case 10:
                 System.out.printf(" ----------------------------------------- " + "\n");
@@ -452,6 +509,32 @@ public class Main {
                 System.out.printf(" -     1. Explicacion de FOR             - " + "\n");
                 System.out.printf(" -     2. Programa FOR                   - " + "\n");
                 System.out.printf(" ----------------------------------------- " + "\n");
+
+                Scanner fo = new Scanner(System.in);
+                System.out.println("ingresa la opcion que deseas");
+                int f = fo.nextInt();
+                switch (f) {
+                    case 1:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Explicacion de FOR                                                                                              -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" - La instrucción                                                                    -" + "\n");
+                        System.out.printf(" -                                                  -" + "\n");
+                        System.out.printf(" -                                                                                                                           -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+                    case 2:
+                        System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
+                        System.out.printf(" -     Programa FOR                                                                                                     -" + "\n");
+                        System.out.printf(" -                                                                                                          -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        break;
+
+                    default:
+                        System.out.printf(" ----------------------------------------- " + "\n");
+                        System.out.printf(" -     OPCION NO VALIDA                  - " + "\n");
+                        System.out.printf(" ----------------------------------------- " + "\n");
+                }
                 break;
             case 0:
                 System.out.printf(" -     Nos vemos lk                      - " + "\n");
