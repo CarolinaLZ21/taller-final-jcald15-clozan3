@@ -1,12 +1,14 @@
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) {
 
+
         System.out.printf(" ----------------------------------------- " + "\n");
         System.out.printf(" -     MENU CAPITULO DE PROGRAMACIÓN     - " + "\n");
         System.out.printf(" -            JORGE CALDERON             - " + "\n");
-        System.out.printf(" -           CAROLINA LOZANO             - " + "\n");
+        System.out.printf(" -            CAROLINA LOZANO            - " + "\n");
         System.out.printf(" ----------------------------------------- " + "\n");
         System.out.printf(" -     1. Datos Primitivos               - " + "\n");
         System.out.printf(" -     2. String                         - " + "\n");
@@ -58,6 +60,7 @@ public class Main {
                         System.out.printf(" -  Ejemplo:                             - " + "\n");
                         System.out.printf(" -     byte valor = 10;                  - " + "\n");
                         System.out.printf(" ----------------------------------------- " + "\n");
+
                         break;
                     case 2:
                         System.out.printf(" ----------------------------------------- " + "\n");
@@ -341,7 +344,7 @@ public class Main {
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
                         System.out.printf(" -     Explicacion de Switch                                                                                                 -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
-                        System.out.printf(" - La sentencia switch es una estructura de control que se utiliza para ejecutar diferentes bloques de código basados        -" + "\n");
+                        System.out.printf(" - La sentencia switch se utiliza para ejecutar diferentes bloques de código basados                                         -" + "\n");
                         System.out.printf(" - en el resultado de una expresión o el valor de una variable.Es ideal para los casos en los que necesitas comparar         -" + "\n");
                         System.out.printf(" - la misma variable contra múltiples valores.                                                                               -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------  " + "\n");
@@ -352,6 +355,7 @@ public class Main {
                         System.out.printf(" -     Determina la calificación de acuerdo al numero ingresado                                                              -" + "\n");
                         System.out.printf(" -     Si es 1 o 2 Su calificación es:F,Si es 3 o 4 Su calificación es:D,Si es 5 o 6 Su calificación es: C                   -" + "\n");
                         System.out.printf(" -     Si es 7 o 8 Su calificación es: B, Si es 9 o 10 Su calificación es: A                                                 -" + "\n");
+                        System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------  " + "\n");
 
                         Scanner calificacion = new Scanner(System.in);
                         System.out.println("Ingrese calificación");
@@ -413,8 +417,8 @@ public class Main {
                         break;
                     case 2:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Programa Ternaria                                                                                                 -" + "\n");
-                        System.out.printf(" -     Determina si un numero es par o impar                                                                                                 -" + "\n");
+                        System.out.printf(" -     Programa Ternaria                                                                                                     -" + "\n");
+                        System.out.printf(" -     Determina si un numero es par o impar                                                                                 -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
 
                         Scanner numero = new Scanner(System.in);
@@ -449,8 +453,8 @@ public class Main {
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
                         System.out.printf(" -     Explicacion de DO WHILE                                                                                               -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
-                        System.out.printf(" - La instrucción do-while permite repetir una instrucción                                                                    -" + "\n");
-                        System.out.printf(" - o una instrucción compuesta hasta que una expresión especificada sea false                                                 -" + "\n");
+                        System.out.printf(" - La instrucción do-while permite ejecutar un bloque de código al menos una vez,                                            -" + "\n");
+                        System.out.printf(" - y luego repetirlo mientras se cumpla una condición específica                                                             -" + "\n");
                         System.out.printf(" -                                                                                                                           -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
@@ -459,6 +463,27 @@ public class Main {
                         System.out.printf(" -     Programa DO WHILE                                                                                                     -" + "\n");
                         System.out.printf(" -     Adivina el numero                                                                                                     -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+
+                        Scanner sdw = new Scanner(System.in);
+                        int numeroAlea = ThreadLocalRandom.current().nextInt(1, 10);
+                        int numeroUsuario;
+                        int intentos = 0;
+
+                        do {
+                            System.out.print("Ingresa tu número: ");
+                            numeroUsuario = sdw.nextInt();
+                            intentos++;
+
+                            if (numeroUsuario < numeroAlea) {
+                                System.out.println("El número que he pensado es mayor.");
+                            } else if (numeroUsuario > numeroAlea) {
+                                System.out.println("El número que he pensado es menor.");
+                            } else {
+                                System.out.println("¡Felicidades! Has adivinado el número en " + intentos + " intentos.");
+                            }
+                        }
+                        while (numeroUsuario != numeroAlea);
+
                         break;
 
                     default:
@@ -482,20 +507,32 @@ public class Main {
                 switch (w) {
                     case 1:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Explicacion de  WHILE                                                                                               -" + "\n");
+                        System.out.printf(" -     Explicacion de  WHILE                                                                                                 -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
-                        System.out.printf(" -                                                                  -" + "\n");
-                        System.out.printf(" -                                                 -" + "\n");
+                        System.out.printf(" -  El bucle while permite repetir un bloque de código mientras                                                              -" + "\n");
+                        System.out.printf(" -  se cumpla una condición específica                                                                                       -" + "\n");
                         System.out.printf(" -                                                                                                                           -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
                     case 2:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Programa  WHILE                                                                                                     -" + "\n");
-                        System.out.printf(" -                                                                                                          -" + "\n");
+                        System.out.printf(" -     Programa  WHILE                                                                                                       -" + "\n");
+                        System.out.printf(" -   Realizar la sumatoria de los números enteros comprendidos entre el 1 y el numero ingresado es decir, 1 + 2 + 3 + …. +   -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
-                        break;
 
+                        Scanner wp = new Scanner(System.in);
+                        System.out.println("ingresa hasta que numero quieres sumar");
+                        int nu = wp.nextInt();
+
+                        int contador = 1;
+                        int suma = 0;
+
+                        while (contador <= nu) {
+                            suma = suma + contador;
+                            contador++;
+                            System.out.println("Suma = " + suma);
+                        }
+                        break;
                     default:
                         System.out.printf(" ----------------------------------------- " + "\n");
                         System.out.printf(" -     OPCION NO VALIDA                  - " + "\n");
@@ -516,18 +553,31 @@ public class Main {
                 switch (f) {
                     case 1:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Explicacion de FOR                                                                                              -" + "\n");
+                        System.out.printf(" -     Explicacion de FOR                                                                                                    -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
-                        System.out.printf(" - La instrucción                                                                    -" + "\n");
-                        System.out.printf(" -                                                  -" + "\n");
+                        System.out.printf(" - El bucle for permite repetir un bloque de código un número específico de veces                                            -" + "\n");
+                        System.out.printf(" -                                                                                                                           -" + "\n");
                         System.out.printf(" -                                                                                                                           -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
                     case 2:
                         System.out.printf(" -----------------------------------------------------------------------------------------------------------------------------" + "\n");
-                        System.out.printf(" -     Programa FOR                                                                                                     -" + "\n");
-                        System.out.printf(" -                                                                                                          -" + "\n");
+                        System.out.printf(" -     Programa FOR                                                                                                          -" + "\n");
+                        System.out.printf(" -   Realizar la sumatoria de los números enteros comprendidos entre el 1 y el 10, es decir, 1 + 2 + 3 + …. + 10             -" + "\n");
                         System.out.printf(" ---------------------------------------------------------------------------------------------------------------------------- " + "\n");
+
+                        Scanner pf = new Scanner(System.in);
+                        System.out.println("ingresa hasta que numero quieres sumar");
+                        int nu = pf.nextInt();
+
+                        int sum = 0;
+
+                        for (int i = 1; i <= nu; i++) {
+                            sum = sum + i;
+
+                            System.out.println("Suma = " + sum);
+
+                        }
                         break;
 
                     default:
