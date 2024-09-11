@@ -297,28 +297,41 @@ public class Main {
                         System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
                     case 2:
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     Explicacion de ELSE IF           - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     1. Explicacion de ELSE IF         - " + "\n");
-                        System.out.printf(" -     2. Programa ELSE IF               - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" -     Explicacion de ELSE IF                                                                                                - " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" - La estructura if-else se utiliza en Java para tomar decisiones sobre un valor preexistente. Es decir, si una condición    - " + "\n");
+                        System.out.printf(" - basada en ese valor preexistente se cumple (si esa condición es verdadera), el programa tomará un camino. Si no (si esa   - " + "\n");
+                        System.out.printf(" - condición es falsa), el programa tomará otro                                                                              - " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
                     case 3:
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     Explicacion de ELSE              - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     1. Explicacion de ELSE            - " + "\n");
-                        System.out.printf(" -     2. Programa ELSE                  - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" -     Explicacion de ELSE                                                                                                   - " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
+                        System.out.printf(" - La declaración else especifica un bloque de código Java que se ejecutará si una condición es falsa en una declaración if  - " + "\n");
+                        System.out.printf(" -                                                                                                                           - " + "\n");
+                        System.out.printf(" ----------------------------------------------------------------------------------------------------------------------------- " + "\n");
                         break;
                     case 4:
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     Programa de IF, ELSE, IF ELSE - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
-                        System.out.printf(" -     1. Explicacion de IF, ELSE, IF ELSE - " + "\n");
-                        System.out.printf(" -     2. Programa IF, ELSE, IF ELSE     - " + "\n");
-                        System.out.printf(" ----------------------------------------- " + "\n");
+                        //Programa que use la sentencia IF, ELSE, IF ELSE
+                                // Crear un objeto Scanner para leer la entrada del usuario
+                                Scanner scanner = new Scanner(System.in);
+                                // Solicitar al usuario que ingrese su calificación
+                                System.out.print("Ingrese su calificación (0-100): ");
+                                int calificacion = scanner.nextInt();
+
+                                // Evaluar la calificación usando sentencias IF, ELSE IF y ELSE
+                                if (calificacion >= 60) {
+                                    System.out.println("¡Felicidades! Has aprobado.");
+                                } else if (calificacion >= 50) {
+                                    System.out.println("Estás en recuperación. Necesitas mejorar.");
+                                } else {
+                                    System.out.println("Lo siento, has reprobado.");
+                                }
+                                // Cerrar el scanner
+                                scanner.close();
                         break;
                     default:
                         System.out.printf(" ----------------------------------------- " + "\n");
